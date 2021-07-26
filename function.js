@@ -70,7 +70,7 @@ function finalizarPedido() {
     let convertData = JSON.stringify(data);
 
     localStorage.setItem(`Compra${localStorage.length + 1}`, convertData);
-    alert("Itens cadastrados com sucesso!!");
+    alert("Pedido finalizado com sucesso!!");
     qtde = 0;
     document.getElementById("number").innerText = qtde;
  
