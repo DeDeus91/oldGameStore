@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de games antigos</title>
+    <script src="function.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <button id="counter" onclick="pedido(), totalPrice()">
+        <h3>(+) Carrinho</h3>
+        <div id="number">
+            0
+        </div>
+    </button>
+    <div id="campo">
+       <div>
+            <div id="close">
+                <img src="componentes/close.jpg" onclick="close_controll()">
+            </div>
+
+            <form>
+                <h1 id="qtde_itens_form">Quantidade de itens: </h1>
+                <h2 id="preco_total">Valor: </h2>
+                <input type="text" placeholder="digite seu nome" class="input_close" id="nome">
+                <input type="tel" placeholder="digite seu telefone" class="input_close" id="telefone">
+                <input type="button" id="input" value="Finalizar Pedido" onclick="close_controll(),  finalizarPedido()">
+
+            </form>
+        </div>
+    </div>
+    <header>
+        
+        <div id="menu-content"> <h5>Old Game Store</h5>
+
+            <input type="checkbox" id="check">
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Clientes</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="https://www.linkedin.com/in/rafael-de-deus/">Contato</a></li>
+            </ul>
+        </div>
+
+        <div id="banner-content">
+        </div>
+ 
+    </header>
+    <main>
+    
+        <article class="main-game-type">
+        
+            <h1>Master System:</h1>
+        </article>
+        <article>
+            <div class="article-game">
+
+                <img src="componentes/alex.jpg">
+                <h1>Alex Kidd in Miracle World</h1>
+                
+                <p class="preco1"> R$ 15,00</p>
+                <button onclick="fJogo(value, 'Alex Kidd in Miracle World',15)" value="001">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/double.jpg">
+                <h1>Double dragon</h1>
+                <p class="preco1"> R$ 12,00 <span>R$ 15,00</span></p>
+                <button onclick="fJogo(value, 'Double dragon',12)" value="002">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/monica.png">
+                <h1>Monica no castelo do dragão </h1>
+                <p class="preco1"> R$ 14,00</p>
+                <button onclick="fJogo(value, 'Monica no castelo do dragão ',14)" value="003">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/sonic.jpg">
+                <h1>Sonic the Hedgehog</h1>
+                <p class="preco1"> R$ 19,00 </p>
+                <button onclick="fJogo(value, 'Sonic the Hedgehog',19)" value="004">Adicionar ao carrinho</button>
+            </div>
+            
+            
+        </article>
+   
+        <article class="main-game-type">
+            <h1>Mega drive:</h1>
+        </article>
+        <article>
+            <div class="article-game">
+
+                <img src="componentes/goldenAxe.jpg">
+                <h1>Golden Axe</h1>
+                <p class="preco1"> R$ 18,00</p>
+                <button onclick="fJogo(value, 'Golden Axe',18)" value="005">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/mk3.jpg">
+                <h1>Ultimate Mortal Kombat 3</h1>
+                <p class="preco1"> R$ 21,00</p>
+                <button onclick="fJogo(value, 'Ultimate Mortal Kombat 3',21)" value="006">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/sonic3.jpg">
+                <h1>Sonic the Hedgehog 3</h1>
+                <p class="preco1"> R$ 19,00</p>
+                <button onclick="fJogo(value, 'Sonic the Hedgehog 3',19)" value="007">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/toons.jpg">
+                <h1>Tiny Toon Adventures: Buster's Hidden Treasure</h1>
+                <p class="preco1"> R$ 18,00 <span>R$ 22,00</span></p>
+                <button onclick="fJogo(value, 'Tiny Toon Adventures: Buster´s Hidden Treasure',18.00)" value="008">Adicionar ao carrinho</button>
+            </div>
+            
+        </article>
+           
+        <article class="main-game-type">
+            <h1>Super Nintendo:</h1>
+        </article>
+        <article>
+            <div class="article-game">
+
+                <img src="componentes/aladdin.jpg">
+                <h1>Aladdin</h1>
+                <p class="preco1"> R$ 30,00 </p>
+                <button onclick="fJogo(value, 'Aladdin',30)" value="009">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/dk.jpg">
+                <h1>Donkey Kong Country 3: Dixie Kong's Double Trouble!</h1>
+                <p class="preco1"> R$ 36,00</p>
+                <button onclick="fJogo(value, 'Donkey Kong Country 3: Dixie Kong´s Double Trouble!',36.00)" value="010">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/mario.jpg">
+                <h1>Super Mario World</h1>
+                <p class="preco1"> R$ 38,00</p>
+                <button onclick="fJogo(value, 'Super Mario World',38.00)" value="011">Adicionar ao carrinho</button>
+            </div>
+            <div class="article-game">
+
+                <img src="componentes/sf.jpg">
+                <h1>Street fighter II</h1>
+                <p class="preco1"> R$ 34,00 <span>R$ 40,00</span></p>
+                <button onclick="fJogo(value, 'Street fighter II',34)" value="012">Adicionar ao carrinho</button>
+            </div>
+            
+        </article>
+
+    </main>
+    <footer>
+        <h3><a href="https://github.com/DeDeus91/oldGameStore">Veja nosso projeto no Git!!</a></h3>
+    </footer>
+</body>
+</html>
